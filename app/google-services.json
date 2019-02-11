@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1080158032706",
+    "firebase_url": "https://apps-687bb.firebaseio.com",
+    "project_id": "apps-687bb",
+    "storage_bucket": "apps-687bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080158032706:android:d3273b112c94211c",
+        "android_client_info": {
+          "package_name": "com.example.omart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080158032706-5km6187rvvges9psagkujcjvlfib9rcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.omart",
+            "certificate_hash": "fd7cb3b72a7d119203f7bed66d29d70dfb5e0b8d"
+          }
+        },
+        {
+          "client_id": "1080158032706-r7kik807jlf9hfqfhk0v347d08svsobd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzxPbaHV-hY4nQ7iYmJRFTUOfGaqEd1gA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080158032706-r7kik807jlf9hfqfhk0v347d08svsobd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
