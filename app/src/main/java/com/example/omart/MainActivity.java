@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.example.omart.Model.Users;
 import com.example.omart.Prevalent.Prevalent;
 import com.google.firebase.database.DataSnapshot;
@@ -22,7 +23,7 @@ import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button joinNowButton, loginButton;
+    private Button joinNowButton, loginButton, crashCheck;
     private ProgressDialog loadingBar;
 
 
@@ -36,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         loadingBar = new ProgressDialog(this);
 
         Paper.init(this);  //initializing paper in order to be used
+
+//        crashCheck= findViewById(R.id.crashcheckbtn);
+//        crashCheck.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v)
+//            {
+//                Crashlytics.getInstance().crash(); // Force a crash
+//            }
+//        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,15 +83,17 @@ public class MainActivity extends AppCompatActivity {
 
     private void allowAccess(final String phone, final String password)     //checkbox for users only not for admin(remembering the credentials)
     {
-        final DatabaseReference rootRef;
-        rootRef = FirebaseDatabase.getInstance().getReference();
-        rootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        final DatabaseReference rootRef;								//in fb, key is always of String type, whereas value can b anything like Object type
+        rootRef = FirebaseDatabase.getInstance().getReference();		//pointing to the root node for write/read if .getReference("string") then points to child node.
+        rootRef.addListenerForSingleValueEvent(new ValueEventListener() {	//addListenerForSingleValueEvent is runs only one time whenever value of child is updated rest like aCEL, vEL runs two time; addChildEventListener is called whenever child's value is affected; valueEventListener is for root value          
+		
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
+				//called every time any event occurs
                 if(dataSnapshot.child("Users").child(phone).exists())
                 {
-                    Users usersData = dataSnapshot.child("Users").child(phone).getValue(Users.class);
+                    Users usersData = dataSnapshot.child("Users").child(phone).getValue(Users.class);	//.getValue(Users.class) bcoz we are getting values from that class type, it can also be generic like String.class in other scenario 
 
                     if(usersData.getPhone().equals(phone))
                     {
@@ -110,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
             {
+				//error handling code here
                 Toast.makeText(MainActivity.this, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
 
             }

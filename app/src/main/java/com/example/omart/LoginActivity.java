@@ -95,13 +95,13 @@ public class LoginActivity extends AppCompatActivity {
         String phone = inputPhoneNumber.getText().toString();
         String password = inputPassword.getText().toString();
 
-        if (TextUtils.isEmpty(phone))
+        if (TextUtils.isEmpty(phone) || phone.length()<10)
         {
-            Toast.makeText(this, "Please write your phone number...", Toast.LENGTH_SHORT).show();
+            inputPhoneNumber.setError("atleast 10 digits");
         }
-        else if (TextUtils.isEmpty(password))
+        else if (TextUtils.isEmpty(password) || password.length()<6)
         {
-            Toast.makeText(this, "Please write your password...", Toast.LENGTH_SHORT).show();
+            inputPassword.setError("atleast 5 alphanumeric characters");
         }
         else
         {

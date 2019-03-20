@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AboutUnaniActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/link_to_hamdard_website"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/product_group" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Click the above image to visit official Hamdard website"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/para_unani_long"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/para_color"
+            />
+    </LinearLayout>
+</ScrollView>

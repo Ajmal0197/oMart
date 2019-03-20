@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class AdminCategoryActivity extends AppCompatActivity {
 
-    private ImageView tshirts, sportsTShirts, femaleDresses, sweaters;
-    private ImageView glasses, hatsCaps, walletsBagsPurses, shoes;
-    private ImageView headphonesHandsFree, laptops, watches, mobilePhones;
+    private TextView general_ailments, heart_care, stomach_care, skin_care;
+    private TextView blood_care, brain_care,  oral_care, hair_care;
+    private TextView cough_care, chest_care, liver_care, joint_care;
 
     private Button logoutBtn, checkOrderBtn;
 
@@ -20,20 +21,20 @@ public class AdminCategoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_category);
 
-        tshirts=findViewById(R.id.t_shirts);
-        sportsTShirts=findViewById(R.id.sports_t_shirts);
-        femaleDresses=findViewById(R.id.female_dresses);
-        sweaters=findViewById(R.id.sweaters);
+        general_ailments=findViewById(R.id.general_ailments);
+        heart_care=findViewById(R.id.heart_care);
+        stomach_care=findViewById(R.id.stomach_care);
+        skin_care=findViewById(R.id.skin_care);
 
-        glasses=findViewById(R.id.glasses);
-        hatsCaps=findViewById(R.id.hats_caps);
-        walletsBagsPurses=findViewById(R.id.purse_bags_wallets);
-        shoes=findViewById(R.id.shoes);
+        blood_care=findViewById(R.id.blood_care);
+        brain_care=findViewById(R.id.brain_care);
+        oral_care=findViewById(R.id.oral_care);
+        cough_care=findViewById(R.id.cough_care);
 
-        headphonesHandsFree=findViewById(R.id.headphones_handsfree);
-        laptops=findViewById(R.id.laptops_pc);
-        watches=findViewById(R.id.watches);
-        mobilePhones=findViewById(R.id.mobile_phones);
+        chest_care=findViewById(R.id.chest_care);
+        liver_care=findViewById(R.id.liver_care);
+        joint_care=findViewById(R.id.joint_care);
+        hair_care=findViewById(R.id.hair_care);
 
         logoutBtn=findViewById(R.id.admin_logout_btn);
         checkOrderBtn=findViewById(R.id.check_orders_btn);
@@ -59,122 +60,122 @@ public class AdminCategoryActivity extends AppCompatActivity {
         });
 
         //sending with Extra to the image selected
-        tshirts.setOnClickListener(new View.OnClickListener() {
+        general_ailments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "tShirts");
+                intent.putExtra("category", "General Ailment");
                 startActivity(intent);
             }
         });
 
-        sportsTShirts.setOnClickListener(new View.OnClickListener() {
+        heart_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sports tShirts");
+                intent.putExtra("category", "Heart Care");
                 startActivity(intent);
             }
         });
 
-        femaleDresses.setOnClickListener(new View.OnClickListener() {
+        stomach_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Female Dresses");
+                intent.putExtra("category", "Stomach Care");
                 startActivity(intent);
             }
         });
 
-        sweaters.setOnClickListener(new View.OnClickListener() {
+        skin_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sweaters");
+                intent.putExtra("category", "Skin Care");
                 startActivity(intent);
             }
         });
 
-        glasses.setOnClickListener(new View.OnClickListener() {
+        blood_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Glasses");
+                intent.putExtra("category", "Blood Care");
                 startActivity(intent);
             }
         });
 
-        hatsCaps.setOnClickListener(new View.OnClickListener() {
+        brain_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Hats Caps");
+                intent.putExtra("category", "Brain Care");
                 startActivity(intent);
             }
         });
 
-        walletsBagsPurses.setOnClickListener(new View.OnClickListener() {
+        oral_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Wallets Bags Purses");
+                intent.putExtra("category", "Oral Care");
                 startActivity(intent);
             }
         });
 
-        shoes.setOnClickListener(new View.OnClickListener() {
+        cough_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Shoes");
+                intent.putExtra("category", "Cough Care");
                 startActivity(intent);
             }
         });
 
-        headphonesHandsFree.setOnClickListener(new View.OnClickListener() {
+        chest_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "HeadPhones HandFree");
+                intent.putExtra("category", "Chest Care");
                 startActivity(intent);
             }
         });
 
-        laptops.setOnClickListener(new View.OnClickListener() {
+        liver_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Laptops");
+                intent.putExtra("category", "Liver Care");
                 startActivity(intent);
             }
         });
 
-        watches.setOnClickListener(new View.OnClickListener() {
+        joint_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Watches");
+                intent.putExtra("category", "Joint Care");
                 startActivity(intent);
             }
         });
 
-        mobilePhones.setOnClickListener(new View.OnClickListener() {
+        hair_care.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivity(new Intent(getApplicationContext(), AdminAddNewProductActivity.class));
                 Intent intent=new Intent(getApplicationContext(), AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Mobile Phones");
+                intent.putExtra("category", "Hair Care");
                 startActivity(intent);
             }
         });

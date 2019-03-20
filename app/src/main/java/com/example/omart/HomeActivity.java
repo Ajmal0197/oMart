@@ -201,7 +201,10 @@ public class HomeActivity extends AppCompatActivity
         {
 
         }
-
+        else if (id == R.id.nav_about_unani)
+        {
+            startActivity(new Intent(getApplicationContext(), AboutUnaniActivity.class));
+        }
         else if (id == R.id.nav_settings)
         {
             Intent intent= new Intent(getApplicationContext(), SettingsActivity.class);

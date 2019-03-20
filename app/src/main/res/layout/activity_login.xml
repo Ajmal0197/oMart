@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/login_applogo"
         android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:src="@drawable/applogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
@@ -77,11 +77,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forget Password?"
+            android:visibility="gone"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
             android:layout_marginLeft="50dp"
             />
-
     </LinearLayout>
 
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">eMart</string>
+    <string name="app_name">Hamdard Unani</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -7,4 +7,13 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="para_unani_long">"Unani Medicine is considered as the science and art of healing.  It is a noble profession of healing the suffering humanity.The system is popular in the society because of its unique approach to preventive, promotive and curative aspects of health care. It has got mass acceptance as one of the complementary medical system. People in India opt Unani Medicine for building career as one of the most satisfying profession. There are a lot of job opportunities both in India and abroad.\n"
+    "\n"
+    "The system is regulated through the Central Council of Indian Medicine. Organized courses i.e UG, PG, Ph.D and postgraduate diploma are available under various universities.\n"
+    "\n"
+    "The career options in Unani Medicine are tremendous. This profession is more of a responsibility than a privilege. The practice of Unani Medicine involves a lot of hard work but highly satisfying. In a society where increasing complications have resulted in variety of ailments and where the poor and needy people can not attend expensive treatment, Unani Medicine provides safe and cost effective treatment with minimal side effect.\n"
+    "\n"
+    "Today's fast life style, lack of exercise, stressful work load, odd eating habits have led to increase in various diseases affecting the population, which can be adequately handled by a Unani practitioner.  Those who are interested in pursuing Unani Medicine as a career should have good memory, stamina, patience, power of concentration, self-motivation, emotional stability, logical and analytical mind, eagerness to learn all through their career and ability to take timely decisions. A Unani doctor is also expected to possess a strong sense of responsibility as the patient’s life depends entirely on him                                  .</string>
+
+
 </resources>

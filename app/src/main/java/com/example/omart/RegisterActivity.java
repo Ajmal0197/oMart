@@ -57,17 +57,17 @@ public class RegisterActivity extends AppCompatActivity
         String phone = inputPhoneNumber.getText().toString();
         String password = inputPassword.getText().toString();
 
-        if (TextUtils.isEmpty(name))
+        if (TextUtils.isEmpty(name) || name.length()<3)
         {
-            Toast.makeText(this, "Please write your name...", Toast.LENGTH_SHORT).show();
+            inputName.setError("at least 3 characters");
         }
-        else if (TextUtils.isEmpty(phone))
+        else if (TextUtils.isEmpty(phone) || phone.length()<10 || phone.length()>12)
         {
-            Toast.makeText(this, "Please write your phone number...", Toast.LENGTH_SHORT).show();
+            inputPhoneNumber.setError("Enter 10 digit valid number");
         }
-        else if (TextUtils.isEmpty(password))
+        else if (TextUtils.isEmpty(password) || password.length() < 5)
         {
-            Toast.makeText(this, "Please write your password...", Toast.LENGTH_SHORT).show();
+            inputPassword.setError("atleast 6 digits alphanumeric characters");
         }
         else
         {

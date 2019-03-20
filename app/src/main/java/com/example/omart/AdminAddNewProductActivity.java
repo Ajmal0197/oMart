@@ -55,7 +55,7 @@ public class AdminAddNewProductActivity extends AppCompatActivity {
 
         productImageRef= FirebaseStorage.getInstance().getReference().child("Product Images"); //to create folder in FB storage
 
-        productRef=FirebaseDatabase.getInstance().getReference().child("Products"); //creating Products named node in Darabase
+        productRef=FirebaseDatabase.getInstance().getReference().child("Products"); //creating Products named node in Database
 
         //Toast.makeText(this, categoryName, Toast.LENGTH_SHORT).show();
         loadingBar = new ProgressDialog(this);
