@@ -12,7 +12,7 @@ Realtime Hamdard Unani medicines App using Firebase. It has two panels - admin a
 ![Screenshot_2019-03-20-21-43-50-092_com example omart](https://user-images.githubusercontent.com/13982255/54709028-b235d600-4b6a-11e9-8edf-1c6c2b4456d2.png)
 
 
-**The user can the select the multiple items to buy:**
+**The user can the add to cart multiple items to buy:**
 
 ![Screenshot_2019-03-20-21-44-01-394_com example omart](https://user-images.githubusercontent.com/13982255/54709104-e27d7480-4b6a-11e9-8249-b9cf3e77f2ec.png)
 
