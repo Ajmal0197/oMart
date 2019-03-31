@@ -1,4 +1,4 @@
-# oMart
+# Unani Medicines
 Realtime Hamdard Unani medicines App using Firebase. It has two panels - admin and user. The admin can put products from the app only and can view all the orders, quantity, address etc about the orders placed for making it ready to dispatch. The user has to create account and then can view all the Unani products and add to his cart for purchase after providing his receiving details. Crash analytics has also been implemented in order to know app crashes and the cause of crash.
 
 
